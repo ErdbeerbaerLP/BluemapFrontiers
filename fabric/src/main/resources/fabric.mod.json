@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "bluemapfrontiers",
+  "version": "${version}",
+  "name": "Bluemap Frontiers",
+  "description": "MapFrontiers integration for Bluemap",
+  "authors": [
+    "ErdbeerbaerLP"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "environment": "SERVER",
+  "entrypoints": {
+    "main": [
+      "de.erdbeerbaerlp.bm_mf.fabric.BluemapFrontiersFabric"
+    ]
+  },
+  "mixins": [
+    "bluemapfrontiers.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "bluemap": ">=5",
+    "mapfrontiers": "*",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
