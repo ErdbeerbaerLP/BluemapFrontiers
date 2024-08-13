@@ -1,5 +1,6 @@
 plugins {
     id 'com.github.johnrengelman.shadow'
+    id "com.modrinth.minotaur"
 }
 
 repositories {
@@ -36,8 +37,6 @@ dependencies {
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionQuilt')
-    common(project(path: ':fabric-like', configuration: 'namedElements')) { transitive false }
-    shadowBundle project(path: ':fabric-like', configuration: 'transformProductionQuilt')
     include("com.technicjelle:BMUtils:4.2.1")
 }
 
@@ -57,4 +56,22 @@ shadowJar {
 
 remapJar {
     input.set shadowJar.archiveFile
+}
+
+modrinth {
+    if (project.hasProperty('modrinth.apikey')) { // $GRADLE_USER_HOME/gradle.properties
+        token = getProperty("modrinth.apikey")
+        projectId = 'OGGG6gVy'
+        versionNumber = version + "-${project.minecraft_version}"
+        versionName = "BlueMapFrontiers-Quilt $version (MC ${project.minecraft_version})"
+        uploadFile = shadowJar
+        changelog = project.changelog
+        gameVersions = ["${project.minecraft_version}"]
+        loaders = ['quilt']
+        versionType = project.releaseType.toUpperCase()
+        dependencies {
+            required.project "bluemap"
+            required.project "mapfrontiers"
+        }
+    }
 }

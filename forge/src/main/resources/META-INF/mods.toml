@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[4,)"
+loaderVersion = "[47,)"
 #issueTrackerURL = ""
 license = "MIT"
 
@@ -14,16 +14,16 @@ MapFrontiers integration for Bluemap
 #logoFile = ""
 
 [[dependencies.bluemapfrontiers]]
-modId = "neoforge"
+modId = "forge"
 type = "required"
-versionRange = "[21.0,)"
+versionRange = "[47,)"
 ordering = "NONE"
 side = "SERVER"
 
 [[dependencies.bluemapfrontiers]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21,)"
+versionRange = "[1.20.1,)"
 ordering = "NONE"
 side = "SERVER"
 

@@ -11,6 +11,5 @@ rootProject.name = 'bluemap-mapfrontiers'
 
 include 'common'
 include 'fabric'
-include 'fabric-like'
-include 'neoforge'
+include 'forge'
 include 'quilt'
