@@ -59,7 +59,7 @@ modrinth {
         projectId = 'OGGG6gVy'
         versionNumber = version + "-${project.minecraft_version}"
         versionName = "BlueMapFrontiers-Fabric $version (MC ${project.minecraft_version})"
-        uploadFile = shadowJar
+        uploadFile = remapJar
         changelog = project.changelog
         gameVersions = ["${project.minecraft_version}"]
         loaders = ['fabric']

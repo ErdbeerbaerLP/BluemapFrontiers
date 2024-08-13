@@ -23,7 +23,7 @@
   ],
   "depends": {
     "fabricloader": ">=0.15.0",
-    "minecraft": "~1.20",
+    "minecraft": "1.19.4",
     "java": ">=17",
     "bluemap": ">=5",
     "mapfrontiers": "*",
