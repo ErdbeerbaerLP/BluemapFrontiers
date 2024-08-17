@@ -15,27 +15,27 @@ MapFrontiers integration for Bluemap
 
 [[dependencies.bluemapfrontiers]]
 modId = "forge"
-type = "required"
+mandatory = true
 versionRange = "[47,)"
 ordering = "NONE"
 side = "SERVER"
 
 [[dependencies.bluemapfrontiers]]
 modId = "minecraft"
-type = "required"
+mandatory = true
 versionRange = "[1.20.1,)"
 ordering = "NONE"
 side = "SERVER"
 
 [[dependencies.bluemapfrontiers]]
 modId = "bluemap"
-type = "required"
+mandatory = true
 versionRange = "[5,)"
 ordering = "NONE"
 side = "SERVER"
 [[dependencies.bluemapfrontiers]]
 modId = "mapfrontiers"
-type = "required"
+mandatory = true
 versionRange = "*"
 ordering = "NONE"
 side = "SERVER"
