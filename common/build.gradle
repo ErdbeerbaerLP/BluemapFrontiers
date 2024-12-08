@@ -22,6 +22,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
 
     compileOnly 'de.bluecolored.bluemap:BlueMapAPI:2.7.2'
-    modImplementation 'maven.modrinth:mapfrontiers:11n0MS4h'
+    modImplementation 'maven.modrinth:mapfrontiers:wnSf6K7V'
+    implementation('com.github.ErdbeerbaerLP:toml4j:wip-SNAPSHOT')
     implementation("com.technicjelle:BMUtils:4.2.1")
 }

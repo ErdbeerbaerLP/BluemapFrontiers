@@ -26,10 +26,7 @@
     "minecraft": "~1.21",
     "java": ">=21",
     "bluemap": ">=5",
-    "mapfrontiers": "*",
+    "mapfrontiers": ">=2.7.0-beta.1",
     "fabric-api": "*"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
